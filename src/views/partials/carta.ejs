@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row p-5"> 
+        <% if (data) { %>           
+            <% for (var i = 0; i < data.length; i++  ) {%> 
+                <% if (data[i].name === "moran") { %>  
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/andrymoran/MHFotos/index/Zapatos%20de%20hombre/8517a-01.jpg" class="card-img-top">
+                            <div class="card-body">
+                               <h5 class="card-title"><%= data[i].name %></h5>
+                               <p class="card-text"><%= data[i].id %></p>                                                       
+                            </div> 
+                        </div>                     
+                    </div>  
+                <% } %>  
+            <% } %>              
+        <% } %>
+    </div>
+</div>
